@@ -1,6 +1,7 @@
 # FastAPI-Image-Similarity
 Small FastAPI project that can receive two images and return the images' percent of similarity.
 
+:--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------:
 ![](https://github.com/diegofigueroa79/FastAPI-Image-Similarity/blob/main/cabbage.jpg) | ![](https://github.com/diegofigueroa79/FastAPI-Image-Similarity/blob/main/filtered.jpg)
 
 ## Installation / Setup
