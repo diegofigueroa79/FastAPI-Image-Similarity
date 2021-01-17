@@ -6,13 +6,13 @@ Small FastAPI project that can receive two images and return the images' percent
 After downloading or git cloning the repository, make sure you are setting up a virtual environment with Python 3.6+.
 Then use pip to install all the necessary libraries from the requirements.txt.
 
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 Then, you'll want to run the live server with uvicorn
-'''bash
+```bash
 uvicorn main:app --reload
-'''
+```
 You can now send HTTP requests to http://127.0.0.1:8000 either on a separate terminal, with Postman, or other methods of your choice.
 
 ## Usage
@@ -43,7 +43,7 @@ data = [
 r = re.post(url, files=data) # send POST request passing out data list
 
 print(r.status_code)
-print(r.content)
+print(r.content) # expected { 'similarity_percent': 69 }
 ```
 
 The second API endpoint for sending two images is by two image links
@@ -67,7 +67,7 @@ data = {
 r2 = re.post(url, json=data)
 
 print(r2.status_code)
-print(r2.content)
+print(r2.content) # expected { 'similarity_percent': 100 }
 ```
 
 
